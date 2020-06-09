@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.565,0.613" Margin="0,0,-0.4,0">
+        <Label Margin="130, 110, 0, 0">IP ADDRESS OF PRINTER</Label>
+        <!--bluetooth device address 48:A4:93:OA:9B:A7-->
+
+        <TextBox x:Name="textBoxAddress"  HorizontalAlignment="Left" Height="60" Margin="180,143,0,0" TextWrapping="Wrap" Text="48:A4:93:OA:9B:A7" VerticalAlignment="Top" Width="303"/>
+        <Button x:Name="button" Content="Print Sample USB" HorizontalAlignment="Left" Margin="10,154,0,0" VerticalAlignment="Top" Width="150" Click="button_Click_USB" FontSize="20" Height="39"/>
+        <Button x:Name="button2" Content="Print Sample BLUETOOTH" HorizontalAlignment="Left" Margin="10,104,0,0" VerticalAlignment="Top" Width="150" Click="button_Click" FontSize="20" Height="39"/>
+        <!--<Button x:Name="bluetooth" Content="connect bluetooth" HorizontalAlignment="Left" Margin="10,194,0,0" VerticalAlignment="Top" Width="150" Click="bt_Click" FontSize="20" Height="39"/>-->
+    </Grid>
+</Window>
